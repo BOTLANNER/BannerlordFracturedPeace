@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+    <tags>
+        <tag language="English" />
+    </tags>
+    <strings>
+        <string id="fractured_peace_n_01" text="Split Kingdom" />
+        <string id="fractured_peace_n_02" text="Already queued to split this kingdom." />
+        <string id="fractured_peace_n_03" text="Splitting kingdoms from Encyclopedia not enabled!" />
+        <string id="fractured_peace_n_04" text="Not in an active game!" />
+        <string id="fractured_peace_n_05" text="Are you sure you want to split {KINGDOM}?" />
+        <string id="fractured_peace_n_06" text="Split All Kingdoms" />
+        <string id="fractured_peace_n_07" text="Are you sure you want to split all kingdoms?" />
+    </strings>
+</base>

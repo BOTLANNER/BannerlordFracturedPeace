@@ -1,0 +1,35 @@
+﻿<Prefab>
+  <Constants>
+
+    <Constant Name="Encyclopedia.Canvas.Width" BrushName="Encyclopedia.Canvas" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Encyclopedia.Canvas.Height" BrushName="Encyclopedia.Canvas" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Encyclopedia.Width" Value="!Encyclopedia.Canvas.Width" Additive="-41"/>
+    <Constant Name="Encyclopedia.Height" Value="!Encyclopedia.Canvas.Height" Additive="-198"/>
+
+  </Constants>
+
+  <Window>
+    <BrushWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true" Brush="Encyclopedia.Page.SoundBrush">
+      <Children>
+
+        <HintWidget DataSource="{DisableHint}" DoNotAcceptEvents="false" WidthSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="75" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="-7" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+
+        <ListPanel DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="75" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="-7">
+          <Children>
+
+            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="40" DoNotPassEventsToChildren="true" VerticalAlignment="Center" Command.Click="ExecuteFractureKindom" Brush="ButtonBrush1" UpdateChildrenStates="true" IsEnabled="@IsFractureAllowed">
+              <Children>
+
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="@FractureKingdomText" />
+
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </ListPanel>
+
+      </Children>
+    </BrushWidget>
+  </Window>
+</Prefab>
